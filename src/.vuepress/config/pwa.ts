@@ -1,6 +1,11 @@
+import { UserConfig } from 'vuepress'
+
+import { pwaPlugin } from '@vuepress/plugin-pwa'
+import { pwaPopupPlugin } from '@vuepress/plugin-pwa-popup'
+
 import colors from './colors'
 
-export default [
+export const pwaHead: UserConfig['head'] = [
   ['link', { rel: 'icon', href: '/icons/logo.png' }],
   ['link', { rel: 'manifest', href: '/site.webmanifest' }],
   ['meta', { name: 'theme-color', content: colors.bgr }],
@@ -60,13 +65,8 @@ export default [
   ['meta', { name: 'msapplication-TileColor', content: colors.accent }],
 ]
 
-import { pwaPlugin } from '@vuepress/plugin-pwa'
-import { pwaPopupPlugin } from '@vuepress/plugin-pwa-popup'
-
 export const plugins = [
-  pwaPlugin({
-    serviceWorker: true,
-  }),
+  pwaPlugin({}),
   pwaPopupPlugin({
     locales: {
       '/': {

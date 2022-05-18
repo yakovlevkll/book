@@ -1,6 +1,6 @@
 import { UserConfig } from 'vuepress'
 import { katexStylesheetURL } from './katex'
-import pwa from './pwa'
+import { pwaHead } from './pwa'
 
 const head: UserConfig['head'] = [
   /* STYLESHEETS */
@@ -12,6 +12,7 @@ const head: UserConfig['head'] = [
       href: katexStylesheetURL,
     },
   ],
+  ...pwaHead
 ]
 
 export default head
