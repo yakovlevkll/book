@@ -13,8 +13,9 @@ function rmTree(pth) {
       } else {
         fs.unlinkSync(child)
       }
-      fs.rmdirSync(pth)
     }
+
+    fs.rmdirSync(pth)
   } catch {}
 }
 
@@ -35,7 +36,6 @@ console.info('Creating links...')
 for (let el of glob.sync('src/**/ru.md')) {
   const parent = path.dirname(el).substring(3)
   const stem = path.basename(el).split('.')[0]
-  console.log()
   const folder = `src/${stem}/${parent}`
   fs.mkdirSync(folder, { recursive: true })
   const link = path.resolve(folder, 'index.md')
