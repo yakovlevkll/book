@@ -13,5 +13,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: yakovlevkll/book
           TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: yarn && yarn build
+          BUILD_SCRIPT: scripts/run.sh && yarn && yarn build
           BUILD_DIR: build
