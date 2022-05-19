@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python3 scripts/create-links.py
+node scripts/create-links.js
