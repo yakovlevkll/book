@@ -1,37 +1,42 @@
-export default {
-  '/': {
-    selectText: 'Языки',
-    label: 'Русский',
+import { defaultTheme } from '@vuepress/theme-default'
 
-    lastUpdated: true,
-    editLinks: true,
-    editLinkText: 'Редактировать страницу на GitHub',
+export default defaultTheme({
+  locales: {
+    '/': {
+      selectText: 'Языки',
+      label: 'Русский',
 
-    // algolia docsearch options for current locale
-    algolia: {},
-    sidebar: {
-      '/math/': [
-        {
-          title: 'Основы',
-          children: ['/math/basics/irrational'],
-        },
-        {
-          title: 'Анализ',
-          children: ['/math/calculus/'],
-        },
-      ],
-      '/': [
-        {
-          title: 'Математика',
-          children: ['/math/basics/', '/math/calculus/'],
-        },
-      ],
-      // "/math/": ruMath.long,
-      // "/ru/biology": ruBiology.long,
-      // "/": [ruMath.short, ruBiology.short]
+      lastUpdated: true,
+      editLinks: true,
+      editLinkText: 'Редактировать страницу на GitHub',
+
+      sidebar: {
+        // '/math/': [
+        //   {
+        //     text: 'Основы',
+        //     children: ['/math/basics/irrational'],
+        //   },
+        //   {
+        //     text: 'Анализ',
+        //     children: ['/math/calculus/'],
+        //   },
+        // ],
+        '/': [
+          {
+            text: 'Математика',
+            children: [
+              '/ru/math/basics/',
+              '/ru/math/calculus/',
+              '/ru/math/trigonometry/',
+            ],
+          },
+        ],
+        // "/math/": ruMath.long,
+        // "/ru/biology": ruBiology.long,
+        // "/": [ruMath.short, ruBiology.short]
+      },
     },
-  },
-  /*
+    /*
     "/en/": {
       selectText: "Languages",
       label: "English",
@@ -47,4 +52,5 @@ export default {
       }
     }
     */
-}
+  },
+})

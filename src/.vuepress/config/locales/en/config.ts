@@ -8,7 +8,7 @@ const ruMath = require("./structure/ru/math");
 const enPythonBasics = require("./structure/en/python-basics");
 */
 
-const locales: UserConfig['locales'] = {
+const locale: UserConfig['locales'] = {
   // The key is the path for the locale to be nested under.
   // As a special case, the default locale can use '/' as its path.
   '/': {
@@ -18,11 +18,6 @@ const locales: UserConfig['locales'] = {
     description: 'Учебник из будущего',
   },
 
-  '/en/': {
-    title: 'Ariadna',
-    description: 'A guiding string of the finest education materials',
-    lang: 'en-US',
-  },
 }
 
-export default locales
+export default locale
