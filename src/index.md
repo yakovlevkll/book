@@ -6,10 +6,10 @@ heroImage: /img/logo.webp
 heroAlt: Направляющая нить из отборных учебных материалов
 actions:
   - text: Поехали →
-    link: /start/ru
+    link: /ru/start
     type: primary
   - text: О проекте
-    link: /about/ru
+    link: /ru/about
     type: secondary
 features:
   - title: Свободный
