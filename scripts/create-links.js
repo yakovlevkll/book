@@ -41,3 +41,16 @@ for (let el of glob.sync('src/**/ru.md')) {
   const link = path.resolve(folder, 'index.md')
   fs.linkSync(el, link)
 }
+
+for (let el of glob.sync('src/**/*.(svg|png|jpg|jpeg|webp)')) {
+  const parent = path.dirname(el).substring(3)
+  const file = path.basename(el)
+
+  const ru = `src/ru/${parent}`
+  fs.mkdirSync(ru, { recursive: true })
+  fs.symlinkSync(el, path.resolve(ru, file))
+
+  const en = `src/en/${parent}`
+  fs.mkdirSync(en, { recursive: true })
+  fs.symlinkSync(el, path.resolve(en, file))
+}
