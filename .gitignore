@@ -6,3 +6,5 @@ node_modules
 build
 src/ru
 src/en
+
+output
