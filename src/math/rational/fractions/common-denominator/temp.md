@@ -124,11 +124,11 @@ $(\dfrac{21}{24}+\dfrac{16}{48})_b_\dfrac{1}{10}=$
 
 $(\dfrac{33}{11}:\dfrac{3}{7})=$
 
-John has \$$600$. He gives $\frac{1}{4}$ to charity. He spends $\frac{2}{3}$ of it. He saves half of the rest. What fraction does he save?
+<!-- John has \$$600$. He gives $\frac{1}{4}$ to charity. He spends $\frac{2}{3}$ of it. He saves half of the rest. What fraction does he save? -->
 
 In a fridge there are two cartoons of milk. One contains $\frac{2}{3}$ of a litre. The other contains $\frac{1}{4}$ of a litre.
 
-@ol
+<!-- @ol -->
 
 How much milk is there altogether?
 Milk is poured from one carton to the other so that they both contain the same amount.

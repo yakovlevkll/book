@@ -31,8 +31,8 @@
    a. Determine $a$ and $b$, knowing that the graph of $f$ goes through point $(2, 2)$ and has an endpoint at $x = 1$.
    b. For $a = 6$ and $b = 0$, determine the possible maximum and minimum of $f$ and classify them.
 
-7. Below is a graph of a function $f$ that has a relative minimum at the point of abscissa $x = -1$ and a relative maximum at the point of abscissa $x = 1$.  
-   ![Graph](graph.svg)
+7. Below is a graph of a function $f$ that has a relative minimum at the point of abscissa $x = -1$ and a relative maximum at the point of abscissa $x = 1$.
+   <!-- ![Graph](graph.svg) -->
    a) Knowing that $f'(0) = 1$, determine the equation of the tangent line at $f$ that goes through the origin of the coordinates.  
    b) Make a sketch of the function $f'$ with the data you have.
 

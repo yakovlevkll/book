@@ -60,7 +60,8 @@
     b) Determine the formula of the function.
 
 13. Below is a graph of a function $f$ that has a relative minimum at the point of abscissa $x = -1$ and a relative maximum at the point of abscissa $x = 1$.
-    ![Graph](graph.svg)
+    <!-- ![Graph](graph.svg) -->
+
     a) Knowing that $f'(0) = 1$, determine the equation of the tangent line at $f$ that goes through the origin of the coordinates.
     b) Make a sketch of the function $f'$ with the data you have.
 
@@ -138,7 +139,7 @@ Given the function $f(x) = \sqrt{x}$ and the point $A(2, 0)$ located on the axis
 
 ::: task
 You want to build a swimming pool that has a rectangle and two adjacent semicircles on the base as shown in the figure below.
-![Pool](pool.svg)
+<!-- ![Pool](pool.svg) -->
 Knowing that the perimeter of the pool should be 30 m, calculate its dimensions so that the area is maximum.
 :::
 

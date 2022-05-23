@@ -22,8 +22,9 @@
     a) Find the function that expresses the distance from point $A$ to any point of the function graph.  
     b) Find the coordinates of the point of $f(x)$ closest to $A$.
 
-6.  You want to build a swimming pool that has a rectangle and two adjacent semicircles on the base as shown in the figure below.  
-    ![Pool](pool.svg)  
+6.  You want to build a swimming pool that has a rectangle and two adjacent semicircles on the base as shown in the figure below.
+    <!-- ![Pool](pool.svg)   -->
+
     Knowing that the perimeter of the pool should be 30 m, calculate its dimensions so that the area is maximum.
 
 7.  Consider the function  
