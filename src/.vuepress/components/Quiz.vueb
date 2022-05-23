@@ -1,0 +1,20 @@
+<template>
+  <div class="quiz">{{ contents }}</div>
+</template>
+
+<script>
+export default {
+  props: ["folder"],
+  computed: {
+    contents() {
+      let filepath = `@/docs/ru/${this.folder}/test.js`;
+      console.log(filepath);
+      let file = require(filepath);
+      return file;
+    }
+  }
+};
+</script>
+
+<style>
+</style>
