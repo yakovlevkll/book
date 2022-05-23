@@ -1,4 +1,5 @@
 import { UserConfig } from 'vuepress'
+import { path } from '@vuepress/utils'
 
 import { activeHeaderLinksPlugin } from '@vuepress/plugin-active-header-links'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
@@ -6,6 +7,7 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { palettePlugin } from '@vuepress/plugin-palette'
 
 import { plugins as pwaPlugins } from './pwa'
 import colors from './colors'
@@ -34,7 +36,7 @@ const plugins: UserConfig['plugins'] = [
 
   // Components
   registerComponentsPlugin({
-    componentsDir: 'components',
+    componentsDir: path.resolve(__dirname, '../components'),
   }),
 
   // Progressive Web App
@@ -44,6 +46,9 @@ const plugins: UserConfig['plugins'] = [
   searchPlugin({
     maxSuggestions: 10,
   }),
+
+  // Theming
+  // palettePlugin({ preset: 'stylus' }),
 
   /* COMMUNITY PLUGINS */
 

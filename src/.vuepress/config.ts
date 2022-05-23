@@ -14,5 +14,5 @@ export default defineUserConfig({
   locales,
   pagePatterns: ['**/(index|ru|en).md'],
   plugins,
-  theme
+  theme,
 })
