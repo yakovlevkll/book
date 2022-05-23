@@ -19,38 +19,60 @@ function rmTree(pth) {
   } catch {}
 }
 
-DIR = process.cwd()
+function main() {
+  const DIR = process.cwd()
+  const TARGET = 'output'
+  const langs = ['en', 'ru']
 
-// Cleanup
-console.info('Cleanup...')
+  // Cleanup
+  console.info('Cleanup...')
 
-const outputFolders = [path.resolve(DIR, 'src/ru'), path.resolve(DIR, 'src/en')]
+  const outputFolders = langs.map((el) => path.resolve(DIR, `${TARGET}/${el}`))
 
-for (let el of outputFolders) {
-  rmTree(el)
+  outputFolders.forEach((el) => {
+    rmTree(el)
+  })
+
+  // Creating links
+  console.info('Creating links...')
+
+  for (let el of glob.sync('src/**/ru.md')) {
+    if (el.includes('!')) {
+      continue
+    }
+    const parent = path.dirname(el).substring(3)
+    const stem = path.basename(el).split('.')[0]
+    const folder = `${TARGET}/${stem}/${parent}`
+    fs.mkdirSync(folder, { recursive: true })
+    const link = path.resolve(folder, 'index.md')
+    fs.linkSync(el, link)
+  }
+
+  for (let el of glob.sync('src/**/*.(svg|png|jpg|jpeg|webp)')) {
+    if (el.includes('!')) {
+      continue
+    }
+    const parent = path.dirname(el).substring(3)
+    const file = path.basename(el)
+
+    langs.forEach((lang) => {
+      const folder = `${TARGET}/${lang}/${parent}`
+      fs.mkdirSync(folder, { recursive: true })
+      fs.linkSync(el, path.resolve(folder, file))
+    })
+  }
+
+  if (!fs.existsSync(`${TARGET}/index.md`)) {
+    fs.linkSync('src/index.md', `${TARGET}/index.md`)
+  }
+
+  for (let el of glob.sync('src/.vuepress/**/*')) {
+    const parent = path.dirname(el).substring(3)
+    const file = path.basename(el)
+    const folder = `${TARGET}/${parent}`
+    fs.mkdirSync(folder, { recursive: true })
+    fs.linkSync(el, path.resolve(folder, file))
+  }
 }
 
-// Creating links
-console.info('Creating links...')
-
-for (let el of glob.sync('src/**/ru.md')) {
-  const parent = path.dirname(el).substring(3)
-  const stem = path.basename(el).split('.')[0]
-  const folder = `src/${stem}/${parent}`
-  fs.mkdirSync(folder, { recursive: true })
-  const link = path.resolve(folder, 'index.md')
-  fs.linkSync(el, link)
-}
-
-for (let el of glob.sync('src/**/*.(svg|png|jpg|jpeg|webp)')) {
-  const parent = path.dirname(el).substring(3)
-  const file = path.basename(el)
-
-  const ru = `src/ru/${parent}`
-  fs.mkdirSync(ru, { recursive: true })
-  fs.linkSync(el, path.resolve(ru, file))
-
-  const en = `src/en/${parent}`
-  fs.mkdirSync(en, { recursive: true })
-  fs.linkSync(el, path.resolve(en, file))
-}
+module.exports = main
