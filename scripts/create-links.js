@@ -27,11 +27,7 @@ function main() {
   // Cleanup
   console.info('Cleanup...')
 
-  const outputFolders = langs.map((el) => path.resolve(DIR, `${TARGET}/${el}`))
-
-  outputFolders.forEach((el) => {
-    rmTree(el)
-  })
+  rmTree(path.resolve(DIR, TARGET))
 
   // Creating links
   console.info('Creating links...')
