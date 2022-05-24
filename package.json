@@ -23,9 +23,10 @@
     "vuepress": "^2.0.0-beta.45"
   },
   "scripts": {
-    "dev": "node scripts && vuepress dev output",
-    "build": "node scripts && yarn vpbuild",
-    "vpbuild": "vuepress build output"
+    "dev": "yarn prepare && vuepress dev output",
+    "build": "yarn prepare && yarn vpbuild",
+    "vpbuild": "vuepress build output",
+    "prepare": "node scripts"
   },
   "dependencies": {
     "katex": "^0.15.3"
