@@ -1,27 +1,32 @@
-export default {
-  "/en/handbooks/": [
+import { SidebarConfigObject } from 'vuepress'
+
+const sidebar: SidebarConfigObject = {
+  '/en/handbooks': [
     {
-      "title": "Common",
-      "children": ["/en/handbooks/common/prefixes"]
+      text: 'Common',
+      children: ['common/prefixes'],
     },
     {
-      "title": "Python",
-      "children": [
-        "/en/handbooks/python/",
-        "/en/handbooks/python/intro",
-        "/en/handbooks/python/numbers",
-        "/en/handbooks/python/strings",
-        "/en/handbooks/python/lists-etc",
-        "/en/handbooks/python/dicts",
-        "/en/handbooks/python/conditionals",
-        "/en/handbooks/python/bytes"
-      ]
-    }
+      text: 'Python',
+      link: 'python',
+      children: [
+        'python/intro',
+        'python/numbers',
+        'python/strings',
+        'python/lists-etc',
+        'python/dicts',
+        'python/conditionals',
+        'python/bytes',
+      ],
+    },
   ],
-  "/en/": [
+  '/en': [
     {
-      "title": "Home",
-      "children": [["/en/home/", "About"]]
-    }
-  ]
+      text: 'Home',
+      link: 'start',
+      children: ['about'],
+    },
+  ],
 }
+
+export default sidebar

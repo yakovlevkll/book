@@ -48,7 +48,11 @@ const plugins: UserConfig['plugins'] = [
   }),
 
   // Theming
-  // palettePlugin({ preset: 'stylus' }),
+  // palettePlugin({
+  //   preset: 'stylus',
+  //   userPaletteFile: path.resolve('../styles/palette.stylus'),
+  //   userStyleFile: path.resolve('../styles/index.stylus'),
+  // }),
 
   /* COMMUNITY PLUGINS */
 

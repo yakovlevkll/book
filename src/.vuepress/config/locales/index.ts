@@ -1,9 +1,14 @@
 /* SITE STRUCTURE */
 
-import { UserConfig } from 'vuepress'
+import { SidebarConfigObject, UserConfig } from 'vuepress'
 
 import { default as localeRU } from './ru/config'
 import { default as localeEN } from './en/config'
+
+import { default as sidebarRU } from './ru/sidebar'
+import { default as sidebarEN } from './en/sidebar'
+
+import { sidebarCollector } from './sidebar'
 
 /*
 const ruBiology = require("./structure/ru/biology");
@@ -18,4 +23,9 @@ const locales: UserConfig['locales'] = {
   ...localeEN,
 }
 
-export default locales
+const sidebars: { [key: string]: SidebarConfigObject } = {
+  ru: sidebarCollector(sidebarRU),
+  en: sidebarCollector(sidebarEN),
+}
+
+export { locales, sidebars }

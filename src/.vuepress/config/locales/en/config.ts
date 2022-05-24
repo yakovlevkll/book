@@ -17,7 +17,6 @@ const locale: UserConfig['locales'] = {
     title: 'Ариадна',
     description: 'Учебник из будущего',
   },
-
 }
 
 export default locale

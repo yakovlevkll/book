@@ -1,4 +1,5 @@
 import { defaultTheme } from '@vuepress/theme-default'
+import { sidebars } from './locales'
 
 export default defaultTheme({
   locales: {
@@ -10,31 +11,7 @@ export default defaultTheme({
       editLinks: true,
       editLinkText: 'Редактировать страницу на GitHub',
 
-      sidebar: {
-        // '/math/': [
-        //   {
-        //     text: 'Основы',
-        //     children: ['/math/basics/irrational'],
-        //   },
-        //   {
-        //     text: 'Анализ',
-        //     children: ['/math/calculus/'],
-        //   },
-        // ],
-        '/': [
-          {
-            text: 'Математика',
-            children: [
-              '/ru/math/basics/',
-              '/ru/math/calculus/',
-              '/ru/math/trigonometry/',
-            ],
-          },
-        ],
-        // "/math/": ruMath.long,
-        // "/ru/biology": ruBiology.long,
-        // "/": [ruMath.short, ruBiology.short]
-      },
+      sidebar: sidebars.ru,
     },
     /*
     "/en/": {
