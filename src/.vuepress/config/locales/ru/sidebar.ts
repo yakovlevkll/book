@@ -29,18 +29,22 @@ const sidebar: SidebarConfigObject = {
     },
     'python',
   ],
-  '/ru/math': [
+  '/ru/math/cheatset': [
+    '<-',
     {
       text: 'Шпаргалка',
-      link: 'cheatset',
+      link: '',
       children: [
-        'trigonometry/cheatset',
-        'common/links',
-        'common/dictionary',
-        'common/greek-alphabet',
-        'common/prefixes',
+        'links',
+        'metric-prefixes',
+        'greek-alphabet',
+        '@/ru/math/trigonometry/cheatset',
       ],
     },
+  ],
+  '/ru/math': [
+    '@',
+    'cheatset',
     {
       text: 'Основы',
       link: 'basics',
