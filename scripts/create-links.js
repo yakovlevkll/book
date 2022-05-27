@@ -32,18 +32,21 @@ function main() {
   // Creating links
   console.info('Creating links...')
 
-  for (let el of glob.sync('src/**/ru.md')) {
-    if (el.includes('!')) {
-      continue
+  langs.forEach((lang) => {
+    for (let el of glob.sync(`src/**/${lang}.md`)) {
+      if (el.includes('!')) {
+        continue
+      }
+      const parent = path.dirname(el).substring(3)
+      const stem = path.basename(el).split('.')[0]
+      const folder = `${TARGET}/${stem}/${parent}`
+      fs.mkdirSync(folder, { recursive: true })
+      const link = path.resolve(folder, 'index.md')
+      fs.linkSync(el, link)
     }
-    const parent = path.dirname(el).substring(3)
-    const stem = path.basename(el).split('.')[0]
-    const folder = `${TARGET}/${stem}/${parent}`
-    fs.mkdirSync(folder, { recursive: true })
-    const link = path.resolve(folder, 'index.md')
-    fs.linkSync(el, link)
-  }
+  })
 
+  // Images
   for (let el of glob.sync('src/**/*.(svg|png|jpg|jpeg|webp)')) {
     if (el.includes('!')) {
       continue
@@ -58,10 +61,16 @@ function main() {
     })
   }
 
+  // Home pages
   if (!fs.existsSync(`${TARGET}/index.md`)) {
-    fs.linkSync('src/index.md', `${TARGET}/index.md`)
+    fs.linkSync('src/home/ru.md', `${TARGET}/index.md`)
   }
 
+  if (!fs.existsSync(`${TARGET}/en/index.md`)) {
+    fs.linkSync('src/home/en.md', `${TARGET}/en/index.md`)
+  }
+
+  // Configuration files
   for (let el of glob.sync('src/.vuepress/**/*')) {
     const parent = path.dirname(el).substring(3)
     const file = path.basename(el)
