@@ -13,6 +13,7 @@ export const macros = {
   '*': '\\cdot',
   '-:': '\\div',
   '\\deg': '^\\circ',
+  '\\bs': '\\backslash',
   // '(': '\\left(',
   // ')': '\\right)',
   '\\Z': '\\mathbb{Z}',
