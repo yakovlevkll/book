@@ -2,6 +2,7 @@ import { SidebarConfigObject } from 'vuepress'
 
 const sidebar: SidebarConfigObject = {
   '/ru/computer-science/python': [
+    '<-',
     {
       text: 'Python',
       link: '',
@@ -23,121 +24,152 @@ const sidebar: SidebarConfigObject = {
     },
   ],
   '/ru/computer-science': [
+    '@',
     {
       text: 'Информатика',
       link: '',
     },
     'python',
   ],
-  '/ru/math/cheatset': [
+  '/ru/math/basics': [
     '<-',
     {
-      text: 'Шпаргалка',
+      text: 'Основы математики',
       link: '',
       children: [
-        'links',
-        'metric-prefixes',
-        'greek-alphabet',
-        '@/ru/math/trigonometry/cheatset',
+        // 'geometry', 'patterns', 'logic', 'algorithms', 'numbers'
       ],
     },
+  ],
+  '/ru/math/cheatset': [
+    '<-',
+    '',
+    'links',
+    'metric-prefixes',
+    'greek-alphabet',
+    'exponents',
+    'logarithms',
+    'trigonometry',
+    'derivatives',
+  ],
+  '/ru/math/irrational': [
+    '<-',
+    '',
+    {
+      text: 'Степени и корни',
+      link: 'exponents',
+      children: [],
+    },
+    {
+      text: 'Логарифмы',
+      link: 'logarithms',
+      children: [],
+    },
+  ],
+  '/ru/math/rational': [
+    '<-',
+    '',
+    {
+      text: 'Обыкновенные дроби',
+      link: 'fractions',
+      children: [
+        'common-denominators',
+        'multiply-divide',
+        'different-denominators',
+      ],
+    },
+    {
+      text: 'Десятичные дроби',
+      link: 'decimals',
+      children: [],
+    },
+    {
+      text: 'Проценты',
+      link: 'percentages',
+      children: [],
+    },
+    // 'bodmas',
+    // 'divisibility',
+    // 'factorization',
+
+    // 'equalities',
+    // 'rounding',
+    // 'time',
+    // 'combinatorics',
+    // 'probability',
+    // 'averages',
+    // '_rational',
   ],
   '/ru/math': [
     '@',
     'cheatset',
-    {
-      text: 'Основы',
-      link: 'basics',
-      children: ['geometry', 'patterns', 'logic', 'algorithms', 'numbers'],
-    },
-    {
-      text: 'Геометрия',
-      children: [
-        'geometry/triangles',
-        'geometry/quadrilaterals',
-        'geometry/circle',
-      ],
-    },
-    {
-      text: 'От пальцев к числам',
-      link: 'integers',
-      children: [
-        'geometry',
-        'positive',
-        'negative',
-        'bodmas',
-        'equalities',
-        'rounding',
-        'sets',
-        '_integers',
-      ],
-    },
-    {
-      text: 'Части целого',
-      link: 'rational',
-      children: [
-        'multiplication',
-        'division',
-        // "/ru/rational/bodmas",
-        'divisibility',
-        'factorization',
-        // "/ru/rational/fractions",
-        'decimals',
-        'percentages',
-        'equalities',
-        'rounding',
-        'time',
-        'combinatorics',
-        'probability',
-        'averages',
-        '_rational',
-        {
-          text: 'Уравнения',
-          link: 'equations',
-          children: ['simultaneous/movement'],
-        },
-      ],
-    },
-    {
-      text: 'Неправильные числа',
-      link: 'irrational',
-      children: ['exponents', 'logarithms', 'measurement', '_irrational'],
-    },
-    {
-      text: 'Буквы вместо чисел',
-      link: 'variables',
-      children: ['polynomials'],
-    },
-    {
-      text: 'Взаимосвязи',
-      link: 'relations',
-      children: [
-        'functions/basics',
-        'functions/linear',
-        'functions/simultaneous-equations',
-        'functions/quadratic',
-        'functions/principles',
-        'trigonometry/basics',
-        'functions/_functions',
-      ],
-    },
-    {
-      text: 'Анализ',
-      link: 'calculus',
-      children: [
-        'limits',
-        'differentiation',
-        'differentiation/extremes',
-        'integration',
-        'integration/parts',
-      ],
-    },
-    {
-      text: 'Невозможные числа',
-      link: 'imaginary',
+    'basics',
+    'rational',
+    'irrational',
+    // {
+    //   text: 'Геометрия',
+    //   children: [
+    //     'geometry/triangles',
+    //     'geometry/quadrilaterals',
+    //     'geometry/circle',
+    //   ],
+    // },
+    // {
+    //   text: 'От пальцев к числам',
+    //   link: 'integers',
+    //   children: [
+    //     'geometry',
+    //     'positive',
+    //     'negative',
+    //     'bodmas',
+    //     'equalities',
+    //     'rounding',
+    //     'sets',
+    //     '_integers',
+    //   ],
+    // },
 
-      children: [],
-    },
+    // {
+    //   text: 'Уравнения',
+    //   link: 'equations',
+    //   children: ['simultaneous/movement'],
+    // },
+
+    // {
+    //   text: 'Буквы вместо чисел',
+    //   link: 'variables',
+    //   children: ['polynomials'],
+    // },
+    // {
+    //   text: 'Взаимосвязи',
+    //   link: 'relations',
+    //   children: [
+    //     'functions/basics',
+    //     'functions/linear',
+    //     'functions/simultaneous-equations',
+    //     'functions/quadratic',
+    //     'functions/principles',
+    //     'trigonometry/basics',
+    //     'functions/_functions',
+    //   ],
+    // },
+    // {
+    //   text: 'Анализ',
+    //   link: 'calculus',
+    //   children: [
+    //     'limits',
+    //     'differentiation',
+    //     'differentiation/extremes',
+    //     'integration',
+    //     'integration/parts',
+    //   ],
+    // },
+    // {
+    //   text: 'Невозможные числа',
+    //   link: 'imaginary',
+
+    //   children: [],
+    // },
   ],
   '/ru': [
     {
