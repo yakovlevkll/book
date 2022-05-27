@@ -2,12 +2,31 @@ import { SidebarConfigArray, SidebarConfigObject } from 'vuepress'
 
 import { path } from '@vuepress/utils'
 
+const homeLink = '/ru/start'
+
+function pathJoiner(parent: string, link: string) {
+  return link.startsWith('@') ? link.substring(1) : path.join(parent, link)
+}
+
 function sidebarChainer(sidebarArr: SidebarConfigArray, parent: string) {
   return sidebarArr.map((el) => {
     if (typeof el === 'string') {
-      return path.join(parent, el)
+      switch (el) {
+        case '<-':
+          return {
+            text: '← Назад',
+            link: path.dirname(parent),
+          }
+        case '@':
+          return {
+            text: '← Все курсы',
+            link: homeLink,
+          }
+        default:
+          return pathJoiner(parent, el)
+      }
     } else {
-      const link = el.link ? path.join(parent, el.link) : parent
+      const link = pathJoiner(parent, el.link || '')
       const children = Object.hasOwn(el, 'children')
         ? sidebarChainer(el.children, link)
         : []
