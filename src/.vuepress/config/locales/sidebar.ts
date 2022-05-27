@@ -27,7 +27,7 @@ function sidebarChainer(sidebarArr: SidebarConfigArray, parent: string) {
       }
     } else {
       const link = pathJoiner(parent, el.link || '')
-      const children = Object.hasOwn(el, 'children')
+      const children = el.hasOwnProperty('children')
         ? sidebarChainer(el.children, link)
         : []
       return {
