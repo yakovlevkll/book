@@ -3,13 +3,13 @@ home: true
 heroText: Ариадна
 tagline: Направляющая нить из отборных учебных материалов
 heroImage: /img/logo.webp
-heroAlt: Направляющая нить из отборных учебных материалов
+heroAlt: Логотип проекта Ариадна
 actions:
   - text: Поехали →
     link: /ru/start
     type: primary
   - text: О проекте
-    link: /ru/about
+    link: /ru/start/about
     type: secondary
 features:
   - title: Свободный
