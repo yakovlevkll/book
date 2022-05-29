@@ -1,4 +1,6 @@
 import { defineUserConfig } from 'vuepress'
+import fs from 'fs'
+import path from 'path'
 
 import head from './config/head'
 import { extendsMarkdown } from './config/markdown'
@@ -15,4 +17,8 @@ export default defineUserConfig({
   pagePatterns: ['**/(index|ru|en).md'],
   plugins,
   theme,
+  onWatched: (app, watchers) => {
+    watchers.push(fs.watch(path.resolve(__dirname, 'styles/index.scss')))
+    watchers.push(fs.watch(path.resolve(__dirname, 'styles/palette.scss')))
+  },
 })
