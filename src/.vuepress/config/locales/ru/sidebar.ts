@@ -8,6 +8,11 @@ const sidebar: SidebarConfigObject = {
       link: '',
     },
     {
+      text: 'Начало работы',
+      link: 'intro',
+      children: ['setup', 'first-steps'],
+    },
+    {
       text: 'Типы данных',
       link: 'data-types',
       children: ['numbers', 'strings', 'bytes'],
@@ -69,6 +74,7 @@ const sidebar: SidebarConfigObject = {
   '/ru/math/rational': [
     '<-',
     '',
+
     {
       text: 'Обыкновенные дроби',
       link: 'fractions',
@@ -76,6 +82,11 @@ const sidebar: SidebarConfigObject = {
         'common-denominators',
         'multiply-divide',
         'different-denominators',
+        'comparison',
+        'equations',
+        'general-rule',
+        'mixed',
+        'reciprocals',
       ],
     },
     {
@@ -88,6 +99,8 @@ const sidebar: SidebarConfigObject = {
       link: 'percentages',
       children: [],
     },
+    'equations',
+    'equations/simultaneous/movement',
     // 'bodmas',
     // 'divisibility',
     // 'factorization',
