@@ -48,7 +48,7 @@ const containers: UserConfig['plugins'] = [
     after: (str) => `</div>`,
   }),
   containerPlugin({
-    type: 'tasks',
+    type: 'task',
     before: (str) => `<div class="block tasks">
           <div class="title">Задания</div>`,
     after: (str) => '</div>',
