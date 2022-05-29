@@ -1,0 +1,1 @@
+const t={key:"v-9eb0d6c2",path:"/ru/math/rational/fractions/mixed/",title:"\u0421\u043C\u0435\u0448\u0430\u043D\u043D\u044B\u0435 \u0434\u0440\u043E\u0431\u0438",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/fractions/mixed/index.md"};export{t as data};

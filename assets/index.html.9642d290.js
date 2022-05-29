@@ -1,0 +1,1 @@
+const e={key:"v-46047783",path:"/ru/math/cheatset/greek-alphabet/",title:"\u0413\u0440\u0435\u0447\u0435\u0441\u043A\u0438\u0439 \u0430\u043B\u0444\u0430\u0432\u0438\u0442",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/cheatset/greek-alphabet/index.md"};export{e as data};

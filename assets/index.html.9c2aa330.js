@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as r,b as e,d as c}from"./app.edcee6da.js";const n={},s=e("h1",{id:"percentages",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#percentages","aria-hidden":"true"},"#"),c(" Percentages")],-1),o=[s];function d(_,i){return t(),r("div",null,o)}var l=a(n,[["render",d],["__file","index.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const t={key:"v-e2331c26",path:"/ru/math/rational/",title:"\u0420\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0447\u0438\u0441\u043B\u0430",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/index.md"};export{t as data};

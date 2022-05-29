@@ -1,0 +1,1 @@
+const t={key:"v-3f1abcfe",path:"/ru/math/rational/fractions/reciprocals/",title:"\u0412\u0437\u0430\u0438\u043C\u043D\u043E \u043E\u0431\u0440\u0430\u0442\u043D\u044B\u0435 \u0447\u0438\u0441\u043B\u0430",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/fractions/reciprocals/index.md"};export{t as data};

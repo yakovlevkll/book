@@ -1,0 +1,1 @@
+const t={key:"v-051387e4",path:"/ru/math/irrational/",title:"\u0418\u0440\u0440\u0430\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0447\u0438\u0441\u043B\u0430",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/irrational/index.md"};export{t as data};

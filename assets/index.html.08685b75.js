@@ -1,0 +1,1 @@
+const t={key:"v-0a22b8e0",path:"/ru/computer-science/python/data-types/",title:"Data types",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/computer-science/python/data-types/index.md"};export{t as data};

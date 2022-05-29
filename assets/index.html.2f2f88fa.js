@@ -1,0 +1,1 @@
+import{_ as a,o as r,c as t,b as e,d as n}from"./app.edcee6da.js";const o={},s=e("h1",{id:"rational-numbers",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#rational-numbers","aria-hidden":"true"},"#"),n(" Rational numbers")],-1),c=[s];function d(i,_){return r(),t("div",null,c)}var h=a(o,[["render",d],["__file","index.html.vue"]]);export{h as default};

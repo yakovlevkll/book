@@ -1,0 +1,1 @@
+import{_ as a,o as c,c as t,b as e,d as s}from"./app.edcee6da.js";const r={},d=e("h1",{id:"decimals",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#decimals","aria-hidden":"true"},"#"),s(" Decimals")],-1),n=[d];function o(i,_){return c(),t("div",null,n)}var h=a(r,[["render",o],["__file","index.html.vue"]]);export{h as default};

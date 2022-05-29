@@ -1,0 +1,1 @@
+const t={key:"v-dc1471bc",path:"/ru/math/cheatset/links/",title:"\u0421\u0441\u044B\u043B\u043A\u0438",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/cheatset/links/index.md"};export{t as data};

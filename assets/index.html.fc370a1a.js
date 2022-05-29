@@ -1,0 +1,1 @@
+const t={key:"v-74fce5a5",path:"/en/math/rational/fractions/",title:"Fractions",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"en/math/rational/fractions/index.md"};export{t as data};

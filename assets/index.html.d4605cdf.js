@@ -1,0 +1,1 @@
+const t={key:"v-d077f698",path:"/ru/computer-science/python/data-types/bytes/",title:"Bytes",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/computer-science/python/data-types/bytes/index.md"};export{t as data};

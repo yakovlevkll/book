@@ -1,0 +1,1 @@
+const t={key:"v-584b88a8",path:"/ru/computer-science/python/intro/",title:"What is Python?",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/computer-science/python/intro/index.md"};export{t as data};

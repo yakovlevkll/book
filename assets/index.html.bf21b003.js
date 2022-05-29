@@ -1,0 +1,1 @@
+const t={key:"v-2dc8f351",path:"/ru/math/calculus/",title:"\u041E\u0441\u043D\u043E\u0432\u044B \u0430\u043D\u0430\u043B\u0438\u0437\u0430",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/calculus/index.md"};export{t as data};

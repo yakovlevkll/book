@@ -1,0 +1,1 @@
+const t={key:"v-20680555",path:"/en/math/calculus/differentiation/",title:"Differentiation",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"en/math/calculus/differentiation/index.md"};export{t as data};

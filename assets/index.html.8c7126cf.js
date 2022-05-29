@@ -1,0 +1,1 @@
+const e={key:"v-19a7ea7d",path:"/en/math/rational/percentages/",title:"Percentages",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"en/math/rational/percentages/index.md"};export{e as data};

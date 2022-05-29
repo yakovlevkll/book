@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as n,b as e,d as i}from"./app.edcee6da.js";const r={},o=e("h1",{id:"differentiation",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#differentiation","aria-hidden":"true"},"#"),i(" Differentiation")],-1),c=[o];function d(s,_){return a(),n("div",null,c)}var h=t(r,[["render",d],["__file","index.html.vue"]]);export{h as default};

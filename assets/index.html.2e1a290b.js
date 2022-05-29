@@ -1,0 +1,1 @@
+const t={key:"v-166ce31b",path:"/ru/math/rational/fractions/comparison/",title:"\u0421\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u0435 \u0434\u0440\u043E\u0431\u0435\u0439",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/fractions/comparison/index.md"};export{t as data};

@@ -1,0 +1,1 @@
+import{_ as r,o as a,c as t,b as e,d as n}from"./app.edcee6da.js";const o={},s=e("h1",{id:"irrational-numbers",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#irrational-numbers","aria-hidden":"true"},"#"),n(" Irrational numbers")],-1),c=[s];function i(d,_){return a(),t("div",null,c)}var h=r(o,[["render",i],["__file","index.html.vue"]]);export{h as default};

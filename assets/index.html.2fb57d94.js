@@ -1,0 +1,1 @@
+const t={key:"v-7d169729",path:"/ru/computer-science/python/",title:"Python",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/computer-science/python/index.md"};export{t as data};

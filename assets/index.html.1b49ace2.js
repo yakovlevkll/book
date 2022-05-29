@@ -1,0 +1,1 @@
+const t={key:"v-4b491ac7",path:"/en/math/rational/",title:"Rational numbers",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"en/math/rational/index.md"};export{t as data};

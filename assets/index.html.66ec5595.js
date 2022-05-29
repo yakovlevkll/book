@@ -1,0 +1,1 @@
+const t={key:"v-199f9ff4",path:"/ru/computer-science/python/structures/",title:"\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/computer-science/python/structures/index.md"};export{t as data};

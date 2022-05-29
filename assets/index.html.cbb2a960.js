@@ -1,0 +1,1 @@
+const e={key:"v-733eb374",path:"/en/math/rational/decimals/",title:"Decimals",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"en/math/rational/decimals/index.md"};export{e as data};

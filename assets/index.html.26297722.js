@@ -1,0 +1,1 @@
+const t={key:"v-41fc846b",path:"/ru/math/rational/fractions/common-denominators/",title:"C\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0438 \u0432\u044B\u0447\u0438\u0442\u0430\u043D\u0438\u0435",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/fractions/common-denominators/index.md"};export{t as data};

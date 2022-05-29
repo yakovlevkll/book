@@ -1,0 +1,1 @@
+const t={key:"v-46cca5f3",path:"/ru/math/rational/fractions/equations/",title:"\u0423\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044F",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/fractions/equations/index.md"};export{t as data};

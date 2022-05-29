@@ -1,0 +1,1 @@
+const t={key:"v-55194778",path:"/ru/math/rational/fractions/multiply-divide/",title:"\u0423\u043C\u043D\u043E\u0436\u0435\u043D\u0438\u0435 \u0438 \u0434\u0435\u043B\u0435\u043D\u0438\u0435",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"ru/math/rational/fractions/multiply-divide/index.md"};export{t as data};

@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as n,b as e,d as o}from"./app.edcee6da.js";const s={},r=e("h1",{id:"constructions",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#constructions","aria-hidden":"true"},"#"),o(" Constructions")],-1),a=[r];function d(i,_){return c(),n("div",null,a)}var l=t(s,[["render",d],["__file","index.html.vue"]]);export{l as default};

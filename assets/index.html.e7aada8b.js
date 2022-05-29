@@ -1,0 +1,1 @@
+const t={key:"v-336f623e",path:"/en/math/irrational/",title:"Irrational numbers",lang:"ru-RU",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:null,contributors:[]},filePathRelative:"en/math/irrational/index.md"};export{t as data};

@@ -1,0 +1,1 @@
+import{_ as a,o as t,c as r,b as e,d as c}from"./app.edcee6da.js";const n={},o=e("h1",{id:"greek-alphabet",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#greek-alphabet","aria-hidden":"true"},"#"),c(" Greek alphabet")],-1),s=[o];function d(_,h){return t(),r("div",null,s)}var l=a(n,[["render",d],["__file","index.html.vue"]]);export{l as default};
