@@ -21,6 +21,9 @@ export const macros = {
   '\\Q': '\\mathbb{Q}',
   '\\N': '\\mathbb{N}',
   '\\f': '\\dfrac{#1}{#2}',
+
+  '\\lcm': '\\text{LCM}',
+  '\\gcf': '\\text{GCF}',
 }
 
 export const katexStylesheetURL =
