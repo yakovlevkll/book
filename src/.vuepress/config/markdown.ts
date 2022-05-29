@@ -16,11 +16,11 @@ const markdown: UserConfig = {
 }
 
 const extendsMarkdown: UserConfig['extendsMarkdown'] = (md) => {
-  // md.use(texmath, {
-  //   engine: katex,
-  //   delimiters: 'dollars',
-  //   katexOptions: { macros, globalGroup: true },
-  // }),
+  md.use(texmath, {
+    engine: katex,
+    delimiters: 'dollars',
+    katexOptions: { macros, globalGroup: true, throwOnError: true },
+  })
 }
 
 export { extendsMarkdown }

@@ -1,4 +1,6 @@
 import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+
 import fs from 'fs'
 import path from 'path'
 
@@ -21,4 +23,16 @@ export default defineUserConfig({
     watchers.push(fs.watch(path.resolve(__dirname, 'styles/index.scss')))
     watchers.push(fs.watch(path.resolve(__dirname, 'styles/palette.scss')))
   },
+  bundler: viteBundler({
+    vuePluginOptions: {
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => {
+            const tags = ['annotation', 'eq', 'eqn', 'semantics']
+            return tags.includes(tag) || tag.startsWith('m')
+          },
+        },
+      },
+    },
+  }),
 })
