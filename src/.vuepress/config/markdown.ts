@@ -16,12 +16,11 @@ const markdown: UserConfig = {
 }
 
 const extendsMarkdown: UserConfig['extendsMarkdown'] = (md) => {
-  md.use(texmath, {
-    engine: katex,
-    delimiters: 'dollars',
-    katexOptions: { macros, globalGroup: true },
-  }),
-    md.linkify.set({ fuzzyEmail: false })
+  // md.use(texmath, {
+  //   engine: katex,
+  //   delimiters: 'dollars',
+  //   katexOptions: { macros, globalGroup: true },
+  // }),
 }
 
 export { extendsMarkdown }
